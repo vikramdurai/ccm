@@ -79,11 +79,11 @@ class Chain:
 	nodes = []
 
 	def findNode(nodeName):
-		x = filter(lambda x: True if x.name == nodeName, nodes)
+		x = filter(lambda x: x.name == nodeName, nodes)
 		if x:
 			return x
 
 	def findRepo(repoId):
-		x = filter(lambda x: True if x.name == repoId, repos)
+		x = filter(lambda x: x.name == repoId, repos)
 		if x:
 			return x
